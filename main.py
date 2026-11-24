@@ -35,6 +35,7 @@ def main() -> None:
     if written.strip() != text:
         raise SystemExit("entry.txt round-trip mismatch")
     print(f"wrote {len(text)} chars to {path}")
+    print(f"entry: {text}")
 
 
 if __name__ == "__main__":
